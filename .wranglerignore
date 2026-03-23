@@ -1,0 +1,7 @@
+.git
+.git/*
+Logistico doc/
+Logistico doc/*
+.DS_Store
+node_modules
+node_modules/*
