@@ -1,0 +1,11 @@
+.git
+.git/
+.git/*
+.wranglerignore
+Logistico doc
+Logistico doc/
+Logistico doc/*
+node_modules
+node_modules/
+node_modules/*
+.DS_Store
