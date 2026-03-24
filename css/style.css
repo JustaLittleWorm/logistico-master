@@ -1365,7 +1365,7 @@ h3 {
 
 /* line 1, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image: url(../img/banner/banner.png);
+  background-image: url(../img/banner/banner.jpg);
 }
 
 /* line 4, ../../Arafath/CL/Cl November/223. Transportation/HTML/scss/_slider.scss */
@@ -8853,6 +8853,58 @@ h6 {
 .blog_part .single-home-blog .card ul li span {
   margin-right: 10px;
   font-size: 12px;
+}
+
+/* Fix for new logo dimensions */
+.logo img {
+  max-width: 220px;
+  max-height: 70px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Fix for uniform service image sizes */
+.single_service .thumb img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* New logistic background image for contact action area */
+.contact_action_area {
+  background-image: url(../Logistic.jpg) !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+/* Animated counter background and high-contrast text */
+@keyframes counterAnim {
+  0% { background-color: rgba(0, 29, 56, 0.85); }
+  50% { background-color: rgba(255, 52, 20, 0.65); }
+  100% { background-color: rgba(0, 29, 56, 0.85); }
+}
+
+.counter_area .offcan_bg {
+  background-image: url(../YucelNakliyat.png) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+  background-blend-mode: multiply !important;
+  animation: counterAnim 8s infinite alternate ease-in-out !important;
+  border-radius: 10px !important;
+}
+
+.counter_area .single_counter h3, 
+.counter_area .single_counter p {
+  position: relative;
+  z-index: 2;
+  color: #fff !important;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7) !important;
+}
+.counter_area .single_counter h3 {
+  font-size: 52px !important;
+  font-weight: 700 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
